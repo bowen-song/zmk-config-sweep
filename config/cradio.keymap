@@ -8,6 +8,34 @@
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
+combos {
+  compatible = "zmk,combos";
+//modifiers
+  COMBO(leftctrl, &kp LCTRL, 21 22)
+  COMBO(rightctrl, &kp RCTRL, 29 30)
+  COMBO(leftshift, &kp LSHFT, 11 12)
+
+
+// numbers
+  COMBO(one, &kp N1, 0 10)
+  COMBO(two, &kp N2, 1 11)
+  COMBO(three, &kp N3, 2 12)
+  COMBO(four, &kp N4, 3 13)
+  COMBO(five, &kp N5, 4 14)
+  COMBO(six, &kp N6, 5 15)
+  COMBO(seven, &kp N7, 6 16)
+  COMBO(eight, &kp N8, 7 17)
+  COMBO(nine, &kp N9, 8 18)
+  COMBO(zero, &kp N0, 9 19)
+};
 
 / {
     behaviors {
