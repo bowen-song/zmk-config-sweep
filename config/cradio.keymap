@@ -11,7 +11,7 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
   combo_##NAME { \
-    timeout-ms = <15>; \
+    timeout-ms = <30>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYER>; \
@@ -25,8 +25,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <80>;
+            tapping-term-ms = <120>;
+            quick-tap-ms = <100>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -36,31 +36,31 @@
       compatible = "zmk,combos";
     //modifiers
       //layer (-1) allows combo on all layers
-      COMBO(leftctrl, &kp LCTRL, 21 22, 0 1 2 3)
-      COMBO(rightctrl, &kp RCTRL, 29 30, 0 1 2 3)
-      COMBO(leftshift, &kp LSHFT, 11 12, 0 1 2 3) 
-      COMBO(rightshift, &kp RSHFT, 19 20, 0 1 2 3)
-      COMBO(escape, &kp ESC, 1 2, 0)
-      COMBO(apostrophe, &kp APOS, 18 20, 0)
+      COMBO(leftctrl, &kp LCTRL, 20 21, 0 1 2 3)
+      COMBO(rightctrl, &kp RCTRL, 28 29, 0 1 2 3)
+      COMBO(leftshift, &kp LSHFT, 10 11, 0 1 2 3) 
+      COMBO(rightshift, &kp RSHFT, 18 19, 0 1 2 3)
+      COMBO(escape, &kp ESC, 0 1, 0)
+      COMBO(apostrophe, &kp APOS, 17 19, 0)
 
     //symbols
-      COMBO(leftbrkt, &kp LBKT, 7 8, 0)
-      COMBO(rightbrkt, &kp RBKT, 8 9, 0)
-      COMBO(leftpar, &kp LPAR, 17 18, 0)
-      COMBO(rightpar, &kp RPAR, 18 19, 0)
-      COMBO(backslash, &kp BSLH, 9 10, 0)
+      COMBO(leftbrkt, &kp LBKT, 6 7, 0)
+      COMBO(rightbrkt, &kp RBKT, 7 9, 0)
+      COMBO(leftpar, &kp LPAR, 16 17, 0)
+      COMBO(rightpar, &kp RPAR, 17 18, 0)
+      COMBO(backslash, &kp BSLH, 8 9, 0)
    
     // numbers, only layer 0 
-      COMBO(one, &kp N1, 2 3, 0)
-      COMBO(two, &kp N2, 3 4, 0)
-      COMBO(three, &kp N3, 4 5, 0)
-      COMBO(four, &kp N4, 12 13, 0)
-      COMBO(five, &kp N5, 13 14, 0)
-      COMBO(six, &kp N6, 14 15, 0)
-      COMBO(seven, &kp N7, 22 23, 0)
-      COMBO(eight, &kp N8, 23 24, 0)
-      COMBO(nine, &kp N9, 24 25, 0)
-      COMBO(zero, &kp N0, 12 14, 0)
+      COMBO(one, &kp N1, 1 2, 0)
+      COMBO(two, &kp N2, 2 3, 0)
+      COMBO(three, &kp N3, 3 4, 0)
+      COMBO(four, &kp N4, 11 12, 0)
+      COMBO(five, &kp N5, 12 13, 0)
+      COMBO(six, &kp N6, 13 14, 0)
+      COMBO(seven, &kp N7, 21 22, 0)
+      COMBO(eight, &kp N8, 22 23, 0)
+      COMBO(nine, &kp N9, 23 24, 0)
+      COMBO(zero, &kp N0, 11 13, 0)
     };
 
     conditional_layers {
