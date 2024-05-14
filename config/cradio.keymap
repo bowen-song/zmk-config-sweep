@@ -36,31 +36,31 @@
       compatible = "zmk,combos";
     //modifiers
       //layer (-1) allows combo on all layers
-      COMBO(leftctrl, &kp LCTRL, 21 22, -1)
-      COMBO(rightctrl, &kp RCTRL, 29 30, -1)
-      COMBO(leftshift, &kp LSHFT, 11 12, -1) 
-      COMBO(rightshift, &kp RSHFT, 19 20, -1)
-      COMBO(escape, &kp ESC, 1 2, 1)
-      COMBO(apostrophe, &kp APOS, 18 20, 1)
+      COMBO(leftctrl, &kp LCTRL, 21 22, 0 1 2 3)
+      COMBO(rightctrl, &kp RCTRL, 29 30, 0 1 2 3)
+      COMBO(leftshift, &kp LSHFT, 11 12, 0 1 2 3) 
+      COMBO(rightshift, &kp RSHFT, 19 20, 0 1 2 3)
+      COMBO(escape, &kp ESC, 1 2, 0)
+      COMBO(apostrophe, &kp APOS, 18 20, 0)
 
     //symbols
-      COMBO(leftbrkt, &kp LBKT, 7 8, 1)
-      COMBO(rightbrkt, &kp RBKT, 8 9, 1)
-      COMBO(leftpar, &kp LPAR, 17 18, 1)
-      COMBO(rightpar, &kp RPAR, 18 19, 1)
-      COMBO(backslash, &kp BSLH, 9 10, 1)
+      COMBO(leftbrkt, &kp LBKT, 7 8, 0)
+      COMBO(rightbrkt, &kp RBKT, 8 9, 0)
+      COMBO(leftpar, &kp LPAR, 17 18, 0)
+      COMBO(rightpar, &kp RPAR, 18 19, 0)
+      COMBO(backslash, &kp BSLH, 9 10, 0)
    
-    // numbers, only layer 1
-      COMBO(one, &kp N1, 2 3, 1)
-      COMBO(two, &kp N2, 3 4, 1)
-      COMBO(three, &kp N3, 4 5, 1)
-      COMBO(four, &kp N4, 12 13, 1)
-      COMBO(five, &kp N5, 13 14, 1)
-      COMBO(six, &kp N6, 14 15, 1)
-      COMBO(seven, &kp N7, 22 23, 1)
-      COMBO(eight, &kp N8, 23 24, 1)
-      COMBO(nine, &kp N9, 24 25, 1)
-      COMBO(zero, &kp N0, 12 14, 1)
+    // numbers, only layer 0 
+      COMBO(one, &kp N1, 2 3, 0)
+      COMBO(two, &kp N2, 3 4, 0)
+      COMBO(three, &kp N3, 4 5, 0)
+      COMBO(four, &kp N4, 12 13, 0)
+      COMBO(five, &kp N5, 13 14, 0)
+      COMBO(six, &kp N6, 14 15, 0)
+      COMBO(seven, &kp N7, 22 23, 0)
+      COMBO(eight, &kp N8, 23 24, 0)
+      COMBO(nine, &kp N9, 24 25, 0)
+      COMBO(zero, &kp N0, 12 14, 0)
     };
 
     conditional_layers {
