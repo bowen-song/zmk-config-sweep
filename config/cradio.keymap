@@ -41,7 +41,7 @@
       COMBO(leftshift, &kp LSHFT, 11 12, -1) 
       COMBO(rightshift, &kp RSHFT, 19 20, -1)
       COMBO(escape, &kp ESC, 1 2, 1)
-      COMBO(apostrophe, &kp APOS, 24 25, 1)
+      COMBO(apostrophe, &kp APOS, 18 20, 1)
 
     //symbols
       COMBO(leftbrkt, &kp LBKT, 7 8, 1)
