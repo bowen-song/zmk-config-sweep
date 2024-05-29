@@ -82,7 +82,7 @@
       COMBO(seven, &kp N7, 21 22, 0)
       COMBO(eight, &kp N8, 22 23, 0)
       COMBO(nine, &kp N9, 23 24, 0)
-      COMBO(zero, &kpN 0, 11 13, 0)
+      COMBO(zero, &kp N0, 11 13, 0)
     };
 
     conditional_layers {
