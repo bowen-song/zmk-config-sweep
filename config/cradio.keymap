@@ -69,7 +69,7 @@
       COMBO(GRAVE, &kp GRAVE, 0 2, 0)
       COMBO(minus, &kp MINUS, 16 18, 0)
       COMBO(lalt, &kp LALT, 22 24, 0)
-      COMBO(ralt, &kp RALT, 25 26, 0)
+      COMBO(ralt, &kp RALT, 25 27, 0)
       COMBO(DEL, &kp DEL, 12 14, 0)
 
     // numbers, only layer 0 
